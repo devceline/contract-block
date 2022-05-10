@@ -15,6 +15,7 @@ const Body: React.FC<BodyProps> = (props) => {
   return (
     <div className='Body'>
       <Routes>
+        <Route path='/' element={<Editor />} />
         <Route path='/create-contract' element={<Editor />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/my-contracts' element={<MyContracts />} />

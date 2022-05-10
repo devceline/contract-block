@@ -83,11 +83,49 @@ code {
   gap: 1em;
 }
 
+.Sidebar__links li a {
+  color: #F6F6F6 !important;
+  text-decoration: none;
+}
+
+.AboutUs {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr 3fr;
+  grid-template: "title groupmembers";
+  padding: 10em;
+}
+
+.AboutUs__title {
+  grid-area: title;
+}
+
+.AboutUs__group {
+  grid-area: groupmembers;
+}
+
+.AboutUs__title h3,
+.AboutUs__group h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.AboutUs__group ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutUs__group ul li {
+  text-align: left;
+}
+
 .Sidebar__links li:hover {
   text-decoration: underline;
 }
-
-
 
 
 
@@ -95,4 +133,15 @@ code {
   grid-area: body;
   display: grid;
   place-items: center;
+  max-height: 100%;
+}
+
+.Editor {
+  height: 100%;
+  width: 100%;
+}
+
+.Editor__editor {
+  height: 100%;
+  width: 100%;
 }
